@@ -2,25 +2,28 @@
 <html>
 <head><meta charset="utf-8"/><title>FinePrint Settings</title><link rel="stylesheet" href="styles.css" /></head>
 <body>
-  <div style="padding:12px; max-width:720px;">
-    <h2>FinePrint — Settings</h2>
-    <p>Configure optional features. None of these are sent to our servers by default.</p>
+ <div style="padding:12px; max-width:720px;">
+   <h2>FinePrint — Settings</h2>
+   <p>Configure optional features. None of these are sent to our servers by default.</p>
 
-    <div>
-      <label>Optional OpenAI API Key (kept in your browser storage):</label>
-      <input id="openaiKey" type="password" style="width:100%" placeholder="sk-..." />
-      <button id="saveKey">Save Key</button>
-      <button id="clearKey" class="muted">Clear Key</button>
-      <p style="font-size:12px;color:#666">Providing an API key enables optional AI summarization. If used, the text you submit will be sent to OpenAI servers. Do not provide keys you don't trust.</p>
-    </div>
 
-    <hr/>
-    <div>
-      <h3>Saved Reports</h3>
-      <div id="reports"></div>
-    </div>
+   <div>
+     <label>Optional OpenAI API Key (kept in your browser storage):</label>
+     <input id="openaiKey" type="password" style="width:100%" placeholder="sk-..." />
+     <button id="saveKey">Save Key</button>
+     <button id="clearKey" class="muted">Clear Key</button>
+     <p style="font-size:12px;color:#666">Providing an API key enables optional AI summarization. If used, the text you submit will be sent to OpenAI servers. Do not provide keys you don't trust.</p>
+   </div>
 
-    <script src="options.js"></script>
-  </div>
+
+   <hr/>
+   <div>
+     <h3>Saved Reports</h3>
+     <div id="reports"></div>
+   </div>
+
+
+   <script src="options.js"></script>
+ </div>
 </body>
 </html>
