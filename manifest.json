@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "FinePrint \u2014 Contract Safety Scanner",
+  "version": "1.0.0",
+  "description": "Scan digital contracts for risky clauses using NLP heuristics, optional OCR, and secure storage.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "sidePanel"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+"icons": {
+  "16": "icons/fineprinticon.png",
+  "48": "icons/fineprinticon.png",
+  "128": "icons/fineprinticon.png"
+}
+,
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "vendor/*",
+        "icons/*"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]}

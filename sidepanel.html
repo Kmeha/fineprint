@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinePrint Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <img src="icons/fineprinticon.png" alt="FinePrint Logo" class="logo">
+    <span class="username">FinePrint</span>
+    <button class="logout">Log out</button>
+  </header>
+
+  <nav class="navbar">
+    <button data-section="home">Home</button>
+    <button data-section="platforms">Platforms</button>
+    <button data-section="faqs">FAQs</button>
+    <button data-section="export">Export</button>
+  </nav>
+
+  <main class="content">
+    <div id="section-container"></div>
+  </main>
+
+  <script src="analyzer.js"></script>
+  <script src="crypto.js"></script>
+  <script src="content.js"></script>
+  <script src="sidepanel.js"></script>
+</body>
+</html>
